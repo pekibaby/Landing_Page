@@ -120,13 +120,16 @@ header button:hover{
     padding: 50px;
     text-align: center;
     background-color: white;
+    animation: move 3s linear infinite alternate;
 }
-
+@keyframes move {
+    from { z-index: 0; transform: scale(1); }
+    to { z-index: 2; transform: scale(1.5); }
+  }
 .bottom-card h3{
     font-size: 1.5em;
     margin-bottom: 20px;
 }
-
 .bottom-card button{
     padding: 15px 80px;
 
